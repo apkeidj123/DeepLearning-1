@@ -24,8 +24,8 @@ label =['school','sex','address','famsize','Pstatus','Mjob','Fjob','reason',
 
 for i in label:
     d = pd.get_dummies(df[i])
-    df.drop([i], axis=1,inplace=True) # inplace=True 消除原始資料
-    res = pd.concat([df, d], axis=1)  # axis 0: 對行操作; 1: 對列操作
+    df.drop([i], axis=1,inplace=True) # inplace=True (delete original data)
+    res = pd.concat([df, d], axis=1)  # axis 0: (do with column); 1: (do with row)
     df = res
 
 # print(df[:5])
