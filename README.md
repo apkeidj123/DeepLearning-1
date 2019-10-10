@@ -1,5 +1,5 @@
 # DeepLearning-1
-Regression and Classification
+## Regression and Classification
 
 1. Linear Regression
 * Split train.csv into training set (80%) and test set (20%).Both the training and test set should be normalized by subtracting the (column-wise) means of training set from them and then divided by the (column-wise) standard deviations of the training set.
